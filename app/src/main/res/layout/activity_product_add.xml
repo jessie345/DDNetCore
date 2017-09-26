@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context="com.example.liushuo.ddnetcore.activity.ProductAddActivity">
+
+        <LinearLayout
+            android:id="@+id/ll_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="产品名称"
+                android:lines="1"
+                />
+
+            <EditText
+                android:id="@+id/et_brief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="start"
+                android:hint="产品描述"
+                android:lines="5"
+                />
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="提交"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="产品名称"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_brief"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="start"
+                android:hint="产品描述"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

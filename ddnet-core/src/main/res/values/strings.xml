@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">mianliuLib</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="title_activity_rquest">RquestActivity</string>
+    <string name="title_activity_video">VideoActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="frag_app_close_flow">关闭</string>
+    <string name="frag_app_back_flow">返回</string>
+    <string name="title_flowtitle">免流量服务</string>
+    <string name="frag_open_sucess_flow">成功</string>
+</resources>

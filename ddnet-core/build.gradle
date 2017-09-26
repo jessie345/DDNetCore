@@ -1,0 +1,44 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            // 此处勿动！！！
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //retrofit2, jackson , gson
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-jackson:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    //eventbus
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    compile 'com.google.guava:guava-base:r03'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.android.support:support-annotations:26.0.0-alpha1'
+    //picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    compile 'jp.wasabeef:picasso-transformations:2.1.2'
+    //okhttp
+    compile 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    compile 'com.alibaba:fastjson:1.2.37'
+}

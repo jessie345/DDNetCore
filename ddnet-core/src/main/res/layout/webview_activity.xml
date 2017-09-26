@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/detail_top"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/lz_sdk_top"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/btn_goback"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_goback_star_selector"
+            android:gravity="center"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/btn_close"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@id/btn_goback"
+            android:gravity="center"
+            android:text="关闭"
+            android:textColor="@color/lz_sdk_tv_back"
+            android:textSize="14dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5.0dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="免流量服务"
+            android:textColor="@color/lz_sdk_tv_gray"
+            android:textSize="18.0sp" />
+    </RelativeLayout>
+
+    <com.luojilab.freeflow.pay.example.payactivity.ProgressWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

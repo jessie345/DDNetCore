@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        net_core {
+            keyAlias 'key0'
+            keyPassword '19890520'
+            storeFile file('/Users/liushuo/OpenSource/DDNetCore/keystore.jks')
+            storePassword '19890520'
+        }
+    }
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.example.liushuo.ddnetcore"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.net_core
+        }
+        debug {
+            signingConfig signingConfigs.net_core
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':ddnet-core')
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    debugCompile 'com.amitshekhar.android:debug-db:1.0.0'
+}

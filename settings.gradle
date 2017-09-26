@@ -1,0 +1,1 @@
+include ':app', ':ddnet-core'
