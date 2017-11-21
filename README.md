@@ -7,5 +7,3 @@
 使用方式及深入讲解：
 
 [基于Retrofit,OkHttp,SqlLite的网络请求框架封装](http://www.jianshu.com/p/9e04ac6fb20d)
-
-后续会更新一些列关于本框架的原理性介绍，本文档会及时更新系列文章，同时可以关注微信公众号获取更多技术资讯:![](http://upload-images.jianshu.io/upload_images/1862989-dd06fd0f7ee521a9.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
